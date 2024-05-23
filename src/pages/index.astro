@@ -1,0 +1,32 @@
+---
+import Button from "../components/button.astro";
+import Dot from "../components/dot.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="My portfolio">
+	<main>
+		<section class="presentation">
+			<div class="bio">
+				<h1 class="name">Manuel A. Madera<Dot /></h1>
+				<h1 class="typed-out">Hi there!👋🏽</h1>
+				<h2 class="title">
+					I'm a passionate Software Developer<Dot />
+				</h2>
+				<p>
+					I'm energized and eager to leverage everything i've learned
+					in this journey. I'm a highly interested on getting a job to
+					apply my skills and knowledge, let's connect and make
+					something amazing thogether!
+				</p>
+				<Button text="Download CV" />
+			</div>
+			<div class="image">
+				<img class="me" src="/profile.jpeg" alt="" />
+			</div>
+		</section>
+		<section class="about">
+			<h1>About me<Dot /></h1>
+		</section>
+	</main>
+</Layout>

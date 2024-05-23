@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+.presentation {
+    background: radial-gradient(circle, rgba(144, 202, 249, 1) 0%, rgba(187, 222, 251, 1) 40%, rgba(227, 242, 253, 1) 100%);
+    color: #1565c0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    height: 1080px;
+}
+
+.presentation .btn {
+    margin-top: 15px;
+}
+
+.bio {
+    width: fit-content;
+    align-self: center;
+    margin: 0;
+}
+
+.bio p{
+    width: 500px;
+    text-wrap: pretty;
+}
+
+
+.name {
+    color: #0d47a1;
+    position: static;
+    font-size: 64px;
+    opacity: 0.2;
+}
+
+.title{
+    color: #0d47a1;
+}
+
+.image {
+    width: fit-content;
+    align-self: center;
+}
+
+.me {
+    width: 400px;
+    border-radius: 50%;
+    border: 3px solid #0d47a1;
+    -webkit-box-shadow: 0px 0px 35px -10px white;
+    -moz-box-shadow: 0px 0px 35px -10px white;
+    box-shadow: 0px 0px 35px -10px white;
+    transition: border-radius 500ms ease-in-out;
+}
+
+.me:hover{
+    border-radius: 57% 43% 67% 33% / 45% 54% 46% 55%;
+}
+
+.about {
+    background-color: #0d47a1;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: fit-content;
+    padding: 80px;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid #0d47a1;
+    white-space: nowrap;
+    animation:
+        typing 2.5s forwards,
+        blink-caret .50s step-end infinite,
+        hide-caret 3.5s forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 175px;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #0d47a1;
+    }
+}
+
+@keyframes hide-caret {
+    from {
+        border-color: #0d47a1;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .me {
+        width: 350px;
+    }
+    .name{
+        position: static;
+    }
+    .bio{
+        margin: 0;
+        padding: 20px;
+        height: fit-content;
+        align-self: center;
+    }
+    .presentation{
+        height: 900px;
+        padding-top: 70px;
+        min-width: 100vh;
+        flex-direction: column-reverse;
+    }
+    .about{
+        min-width: 100vh;
+        flex-direction: column;
+    }
+    body, main, html{
+        min-width: 100vh;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .presentation {
+        flex-direction: column-reverse;
+    }
+    body,
+    main,
+    html {
+        min-width: 100vh;
+    }
+}
